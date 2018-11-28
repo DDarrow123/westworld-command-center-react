@@ -15,7 +15,7 @@ class Headquarters extends Component {
         <ColdStorage hostState={this.props.hostState} handleSelectedHostClick={this.props.handleSelectedHostClick}/>
         </Grid.Column>
         <Grid.Column width={5}>
-          <Details hostState={this.props.hostState} selectedHost={this.props.selectedHost} areaState={this.props.areaData}/>
+          <Details hostState={this.props.hostState} selectedHost={this.props.selectedHost} areaState={this.props.areaState} dropDownOptions={this.props.dropDownOptions}/>
         </Grid.Column>
         <Grid.Column width={3}>
 

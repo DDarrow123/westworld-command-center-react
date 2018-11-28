@@ -17,7 +17,8 @@ class HostInfo extends Component {
   }
 
   componentDidMount(){
-    this.props.areaState
+
+    this.setState({options: this.props.dropDownOptions})
   }
 
 

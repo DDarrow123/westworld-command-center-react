@@ -10,7 +10,7 @@ const Details = (props) => {
   // Watch the video to see how this works in the app.
 
   const renderLogo = () => (<Image size='medium' src={Images.westworldLogo}/>)
-  const renderHostInfo = () => (<HostInfo hostState={props.hostState} selectedHost={props.selectedHost} areaState={props.areaData}/>)
+  const renderHostInfo = () => (<HostInfo hostState={props.hostState} selectedHost={props.selectedHost} areaState={props.areaState} dropDownOptions={props.dropDownOptions}/>)
 
   return(
     <Segment id="details" className="HQComps">
