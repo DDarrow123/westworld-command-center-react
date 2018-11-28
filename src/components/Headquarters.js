@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../stylesheets/Headquarters.css';
 import { Grid } from 'semantic-ui-react';
 import Details from './Details'
+import ColdStorage from './ColdStorage'
 
 
 class Headquarters extends Component {
@@ -11,12 +12,10 @@ class Headquarters extends Component {
     return(
       <Grid celled='internally'>
         <Grid.Column width={8}>
-
-        {/* Something goes here.... */}
-
+        <ColdStorage hostState={this.props.hostState} handleSelectedHostClick={this.props.handleSelectedHostClick}/>
         </Grid.Column>
         <Grid.Column width={5}>
-          <Details />
+          <Details hostState={this.props.hostState} selectedHost={this.props.selectedHost} areaState={this.props.areaData}/>
         </Grid.Column>
         <Grid.Column width={3}>
 
